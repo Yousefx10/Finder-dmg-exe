@@ -30,7 +30,46 @@
             <RowDefinition Height="15"/>
         </Grid.RowDefinitions>
         <!--Grid Definitions [END]-->
-        
+
+
+        <Grid Grid.Column="1" Grid.Row="1" >
+            <!---->
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <!---->
+            <Grid.RowDefinitions>
+                <RowDefinition Height="10*"/>
+                <RowDefinition Height="10*"/>
+                <RowDefinition Height="10*"/>
+                <RowDefinition Height="10*"/>
+                <RowDefinition Height="10*"/>
+                <RowDefinition Height="10*"/>
+                <RowDefinition Height="10*"/>
+                <RowDefinition Height="10*"/>
+                <RowDefinition Height="10*"/>
+                <RowDefinition Height="10*"/>
+            </Grid.RowDefinitions>
+            <!---->
+
+
+            <Button Background="Transparent" BorderThickness="0" Grid.Row="0" >
+                <StackPanel Orientation="Horizontal">
+                    <!--<Image/>-->
+                    <Rectangle Width="10" Height="10" Fill="black" Margin="2"/>
+                    <TextBlock Text="Recents"/>
+                </StackPanel>
+            </Button>
+            <Button Background="Transparent" BorderThickness="0" Grid.Row="1" Content="Shared"/>
+            <Button Background="Transparent" BorderThickness="0" Grid.Row="2" Content="Applications"/>
+            <Button Background="Transparent" BorderThickness="0" Grid.Row="3" Content="Desktop"/>
+            <Button Background="Transparent" BorderThickness="0" Grid.Row="4" Content="Documents"/>
+            <Button Background="Transparent" BorderThickness="0" Grid.Row="5" Content="Downloads"/>
+            <Button Background="Transparent" BorderThickness="0" Grid.Row="6" Content="Local Disk C:"/>
+            <Button Background="Transparent" BorderThickness="0" Grid.Row="7" Content="OneDrive"/>
+            <Button Background="Transparent" BorderThickness="0" Grid.Row="8" Content="USER"/>
+            <Button Background="Transparent" BorderThickness="0" Grid.Row="9" Content="Trash"/>
+        </Grid>
         
     </Grid>
 </Window>
