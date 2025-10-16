@@ -5,6 +5,8 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Finder_dmg_exe"
         mc:Ignorable="d"
+        
+        xmlns:UserContols="clr-namespace:Finder_dmg_exe.View.UserControls"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
         <!--Grid Definitions [START]-->
@@ -32,7 +34,7 @@
         <!--Grid Definitions [END]-->
 
 
-        <Grid Grid.Column="1" Grid.Row="1" >
+        <Grid Grid.Column="1" Grid.Row="1" HorizontalAlignment="Left">
             <!---->
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="*"/>
@@ -51,24 +53,24 @@
                 <RowDefinition Height="10*"/>
             </Grid.RowDefinitions>
             <!---->
+            <!--<Grid.Resources>
+                <Style TargetType="Button">
+                    <Setter Property="HorizontalContentAlignment" Value="Left"/>
+                </Style>
+            </Grid.Resources>-->
+
+            <UserContols:SideBar Grid.Row="0" Text="Recents"/>
+            <UserContols:SideBar Grid.Row="1" Text="Shared"/>
+            <UserContols:SideBar Grid.Row="2" Text="Applications"/>
+            <UserContols:SideBar Grid.Row="3" Text="Desktop"/>
+            <UserContols:SideBar Grid.Row="4" Text="Documents"/>
+            <UserContols:SideBar Grid.Row="5" Text="Downloads"/>
+            <UserContols:SideBar Grid.Row="6" Text="Local Disk C:"/>
+            <UserContols:SideBar Grid.Row="7" Text="OneDrive"/>
+            <UserContols:SideBar Grid.Row="8" Text="USER"/>
+            <UserContols:SideBar Grid.Row="9" Text="Trash"/>
 
 
-            <Button Background="Transparent" BorderThickness="0" Grid.Row="0" >
-                <StackPanel Orientation="Horizontal">
-                    <!--<Image/>-->
-                    <Rectangle Width="10" Height="10" Fill="black" Margin="2"/>
-                    <TextBlock Text="Recents"/>
-                </StackPanel>
-            </Button>
-            <Button Background="Transparent" BorderThickness="0" Grid.Row="1" Content="Shared"/>
-            <Button Background="Transparent" BorderThickness="0" Grid.Row="2" Content="Applications"/>
-            <Button Background="Transparent" BorderThickness="0" Grid.Row="3" Content="Desktop"/>
-            <Button Background="Transparent" BorderThickness="0" Grid.Row="4" Content="Documents"/>
-            <Button Background="Transparent" BorderThickness="0" Grid.Row="5" Content="Downloads"/>
-            <Button Background="Transparent" BorderThickness="0" Grid.Row="6" Content="Local Disk C:"/>
-            <Button Background="Transparent" BorderThickness="0" Grid.Row="7" Content="OneDrive"/>
-            <Button Background="Transparent" BorderThickness="0" Grid.Row="8" Content="USER"/>
-            <Button Background="Transparent" BorderThickness="0" Grid.Row="9" Content="Trash"/>
         </Grid>
         
     </Grid>
