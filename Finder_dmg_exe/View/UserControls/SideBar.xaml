@@ -12,6 +12,7 @@
                  BorderThickness="0" 
                  Grid.Row="0"
                  HorizontalContentAlignment="Left"
+                 Padding="10 2 10 2"
                  >
             
             <StackPanel Orientation="Horizontal">
