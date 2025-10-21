@@ -24,82 +24,114 @@
         <Grid.RowDefinitions>
             <RowDefinition Height="15"/>
                 <!--Real Rows [START]-->
-                <RowDefinition Height="auto"/>
-                <RowDefinition Height="auto"/>
-                <RowDefinition Height="auto"/>
+                <RowDefinition Height=".9*"/>
                 <!--Real Rows [END]-->
-            <RowDefinition Height="*"/>
+            <RowDefinition Height=".1*"/>
             <RowDefinition Height="15"/>
         </Grid.RowDefinitions>
         <!--Grid Definitions [END]-->
 
 
-        <Grid Grid.Column="1" Grid.Row="1" HorizontalAlignment="Left">
-            <!---->
-            <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="*"/>
-            </Grid.ColumnDefinitions>
-            <!---->
-            <Grid.RowDefinitions>
-                <RowDefinition Height="10*"/>
-                <RowDefinition Height="10*"/>
-                <RowDefinition Height="10*"/>
-            </Grid.RowDefinitions>
-            <!---->
-            <!--<Grid.Resources>
+        <Border
+            Grid.Column="1"
+            Grid.Row="1"
+            
+            BorderBrush="Black"
+            BorderThickness="2"
+            CornerRadius="15"
+            Padding="10"
+            SnapsToDevicePixels="True"
+            >
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="auto"/>
+                </Grid.ColumnDefinitions>
+
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="auto"/>
+                    <RowDefinition Height="auto"/>
+                    <RowDefinition Height="auto"/>
+                </Grid.RowDefinitions>
+                <Grid.Resources>
+                    <Style TargetType="Grid">
+                        <Setter Property="Margin" Value="0 10"/>
+                    </Style>
+                </Grid.Resources>
+
+
+                <Grid Grid.Column="0" Grid.Row="0" HorizontalAlignment="Left">
+                    <!---->
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <!---->
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="10*"/>
+                        <RowDefinition Height="10*"/>
+                        <RowDefinition Height="10*"/>
+                    </Grid.RowDefinitions>
+                    <!---->
+                    <!--<Grid.Resources>
                 <Style TargetType="Button">
                     <Setter Property="HorizontalContentAlignment" Value="Left"/>
                 </Style>
             </Grid.Resources>-->
-            <TextBlock Text="***" Margin="0 5 0 2"/>
-                <UserContols:SideBar Grid.Row="1" Text="Recents"/>
-                <UserContols:SideBar Grid.Row="2" Text="Shared"/>
+                    <TextBlock Text="***" Margin="0 5 0 2"/>
+                    <UserContols:SideBar Grid.Row="1" Text="Recents"/>
+                    <UserContols:SideBar Grid.Row="2" Text="Shared"/>
 
 
-        </Grid>
+                </Grid>
 
-        <Grid Grid.Column="1" Grid.Row="2" HorizontalAlignment="Left">
-            <!---->
-            <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="*"/>
-            </Grid.ColumnDefinitions>
-            <!---->
-            <Grid.RowDefinitions>
-                <RowDefinition Height="10*"/>
-                <RowDefinition Height="10*"/>
-                <RowDefinition Height="10*"/>
-                <RowDefinition Height="10*"/>
-                <RowDefinition Height="10*"/>
-            </Grid.RowDefinitions>
-            <!---->
-            <TextBlock Text="Favorites" Margin="0 5 0 2"/>
-                <UserContols:SideBar Grid.Row="1" Text="Applications"/>
-                <UserContols:SideBar Grid.Row="2" Text="Desktop"/>
-                <UserContols:SideBar Grid.Row="3" Text="Documents"/>
-                <UserContols:SideBar Grid.Row="4" Text="Downloads"/>
+                <Grid Grid.Column="0" Grid.Row="1" HorizontalAlignment="Left">
+                    <!---->
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <!---->
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="10*"/>
+                        <RowDefinition Height="10*"/>
+                        <RowDefinition Height="10*"/>
+                        <RowDefinition Height="10*"/>
+                        <RowDefinition Height="10*"/>
+                    </Grid.RowDefinitions>
+                    <!---->
+                    <TextBlock Text="Favorites" Margin="0 5 0 2"/>
+                    <UserContols:SideBar Grid.Row="1" Text="Applications"/>
+                    <UserContols:SideBar Grid.Row="2" Text="Desktop"/>
+                    <UserContols:SideBar Grid.Row="3" Text="Documents"/>
+                    <UserContols:SideBar Grid.Row="4" Text="Downloads"/>
 
-        </Grid>
+                </Grid>
 
-        <Grid Grid.Column="1" Grid.Row="3" HorizontalAlignment="Left">
-            <!---->
-            <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="*"/>
-            </Grid.ColumnDefinitions>
-            <!---->
-            <Grid.RowDefinitions>
-                <RowDefinition Height="10*"/>
-                <RowDefinition Height="10*"/>
-                <RowDefinition Height="10*"/>
-                <RowDefinition Height="10*"/>
-                <RowDefinition Height="10*"/>
-            </Grid.RowDefinitions>
-            <!---->
-            <TextBlock Text="Locations" Margin="0 5 0 2"/>
-                <UserContols:SideBar Grid.Row="1" Text="Local Disk C:"/>
-                <UserContols:SideBar Grid.Row="2" Text="OneDrive"/>
-                <UserContols:SideBar Grid.Row="3" Text="USER"/>
-                <UserContols:SideBar Grid.Row="4" Text="Trash"/>
-        </Grid>
+                <Grid Grid.Column="0" Grid.Row="2" HorizontalAlignment="Left">
+                    <!---->
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <!---->
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="10*"/>
+                        <RowDefinition Height="10*"/>
+                        <RowDefinition Height="10*"/>
+                        <RowDefinition Height="10*"/>
+                        <RowDefinition Height="10*"/>
+                    </Grid.RowDefinitions>
+                    <!---->
+                    <TextBlock Text="Locations" Margin="0 5 0 2"/>
+                    <UserContols:SideBar Grid.Row="1" Text="Local Disk C:"/>
+                    <UserContols:SideBar Grid.Row="2" Text="OneDrive"/>
+                    <UserContols:SideBar Grid.Row="3" Text="USER"/>
+                    <UserContols:SideBar Grid.Row="4" Text="Trash"/>
+                </Grid>
+
+
+
+
+            </Grid>
+        </Border>
+        
 
     </Grid>
 </Window>
